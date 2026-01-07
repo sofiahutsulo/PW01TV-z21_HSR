@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Практична робота 1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <!-- ================= ЗАВДАННЯ 1 ================= -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Завдання 1. Склад сухої/горючої маси та теплота згоряння"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введіть елементарний склад палива на робочу масу, %:" />
+
+        <EditText
+            android:id="@+id/editHP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hₚ, %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editCP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cₚ, %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sₚ, %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editNP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nₚ, %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editOP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Oₚ, %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editWP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wₚ, %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editAP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Aₚ, %"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/buttonCalc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати (завд.1)"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textResult1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результат завдання 1 буде тут"
+            android:paddingTop="8dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#CCCCCC" />
+
+        <!-- ================= ЗАВДАННЯ 2 ================= -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Завдання 2. Мазут (горюча → робоча маса)"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введіть склад горючої маси мазуту та параметри:" />
+
+        <EditText
+            android:id="@+id/editC2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cᵍ, %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editH2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hᵍ, %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editO2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Oᵍ, %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editS2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sᵍ, %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editQdaf2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Qᵈᵃᶠ, МДж/кг"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editWr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wʳ, % (вологість робочої маси)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editAd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Aᵈ, % (зольність сухої маси)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editVdaf2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vᵈᵃᶠ, мг/кг"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/buttonCalc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати (завд.2)"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textResult2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результат завдання 2 буде тут"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>
